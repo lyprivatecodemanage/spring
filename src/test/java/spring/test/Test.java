@@ -1,7 +1,10 @@
 package spring.test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Test {
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		System.out.println(get(1));
 	}
 	public static int get(int x){
@@ -17,5 +20,12 @@ public class Test {
 				j++;
 		}
 		return j+x;
+	}*/
+	static class OOMObject{}
+	public static void main(String[] args) {
+		List<OOMObject> list = new ArrayList<OOMObject>();
+		while(true){
+			list.add(new OOMObject());
+		}
 	}
 }
