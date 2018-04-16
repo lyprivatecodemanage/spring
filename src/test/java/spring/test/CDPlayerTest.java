@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import spring.di.CDPlayer;
-import spring.di.CDPlayerConfig;
-import spring.di.CompactDisc;
+import com.spring.di.CDPlayer;
+import com.spring.di.CDPlayerConfig;
+import com.spring.di.CompactDisc;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes={CDPlayerConfig.class})
